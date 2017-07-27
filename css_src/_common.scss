@@ -1,6 +1,13 @@
+%clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
 .big-image{
   width:100%;
   height:690px;
+  text-indent:-99999em;
 }
 
 .gray-texture{
