@@ -1,3 +1,15 @@
+.japan{
+  &:before{
+    content:"";
+    display:block;
+    width:104px;
+    height:63px;
+    background:url(../images/nation_jp.png) no-repeat 0 0;
+    float:left;
+    margin:0;
+  }
+}
+
 .food {
 
   &-section{
