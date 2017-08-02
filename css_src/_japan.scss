@@ -15,8 +15,10 @@
   &-section{
     width:100%;
   }
-
-
+  &-page{
+    width:1200px;
+    height:1980px;
+  }
   &-wrap {
     height: 481px;
 
@@ -36,13 +38,111 @@
     }
   }
 
+  &-image {
+    width:714px;
+    height:480px;
+    float:left;
+
+    &-list {
+      width: 714px;
+      height: 440px;
+      position: relative;
+      overflow: hidden;
+
+      &-item {
+        width: 714px;
+        height: 440px;
+        display:block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+    }
+
+    &-circle{
+      width:117px;
+      height:21px;
+      margin:19px auto 0;
 
 
+      @extend %clearfix;
+
+      &-button{
+        width:21px;
+        height:21px;
+        border-radius: 50%;
+        background-color:#ddd;
+        float:left;
+        text-indent: -99999em;
+
+        margin-right:27px;
+
+        &:last-child{
+          margin-right:0;
+        }
+      }
+    }
+  }
+
+  &-right-wrap{
+    width:408px;
+    height:440px;
+    float:right;
+  }
+  &-icon-wrap{
+    width:353px;
+    height:103px;
+
+    @extend %clearfix;
+  }
+
+  &-icon {
+    width:103px;
+    height:103px;
+    background:url(../images/img_sprite.png) no-repeat 0 0;
+    float: left;
+    text-indent:-99999em;
+    margin-bottom:38px;
+
+    &.icon-1{
+      background-position:0 -86px;
+      margin-right:22px;
+    }
+
+    &.icon-2{
+      background-position:-104px -86px;
+      margin-right:22px;
+    }
+
+    &.icon-3{
+      background-position:-208px -86px;
+    }
+
+  }
+
+  &-name{
+    font-size:39px;
+    float:left;
+    margin-bottom: 25px;
+  }
+
+  &-paragraph{
+    float:left;
+    line-height:1.5;
+  }
 
 }
 
+.recipe{
+
+}
+
+
+
+
 .jp-food-image{
-  background:url(../images/b-image.jpg) no-repeat;
+  background:url(../images/jp_b_image1.jpg) no-repeat;
 background-attachment: fixed;
 }
 
@@ -53,16 +153,16 @@ background-attachment: fixed;
 }
 
 .jp-res-image{
-  background:url(../images/b-image2.jpg) no-repeat;
+  background:url(../images/jp_b_image2.jpg) no-repeat;
   background-attachment: fixed;
 }
 
 .jp-cont-image{
-  background:url(../images/b-image3.jpg) no-repeat;
+  background:url(../images/jp_b_image3.jpg) no-repeat;
   background-attachment: fixed;
 }
 
 .jp-event-image{
-  background:url(../images/b-image4.jpg) no-repeat;
+  background:url(../images/jp_b_image4.jpg) no-repeat;
   background-attachment: fixed;
 }
